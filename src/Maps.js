@@ -41,7 +41,7 @@ export default function Maps(props) {
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://api.maptiler.com/maps/satellite/tiles.json?key=LpiKndoYacwb8kMdM8Ob"
+        url="https://api.maptiler.com/maps/satellite/{z}/{x}/{y}.jpg?key=LpiKndoYacwb8kMdM8Ob"
       />
       {selectPosition && (
         <Marker position={locationSelection} icon={icon}>
